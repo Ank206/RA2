@@ -1,0 +1,9 @@
+.menu {
+  display: flex;
+  color: white;
+  flex-direction: row;
+}
+
+.menu > li {
+  font-size: 20px;
+}
