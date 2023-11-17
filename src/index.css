@@ -16,9 +16,10 @@
 
 .content-div {
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   height: 250px;
+  /* width: 400px; */
   /* background-image: none;
   transition: background-image;
   transition-timing-function: ease-in-out;

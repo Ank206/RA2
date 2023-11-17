@@ -15,13 +15,13 @@ const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
             Contact
           </p>
-          <p className="text-gray-300 py-4">
-            // Submit the form below or shoot me an email - myemail@gmail.com
+          <p className="text-gray-300 py-4 text-xl">
+            // Submit the form below 
           </p>
         </div>
         <input
           type="text"
-          className="p-2 bg-[#ccd6f6]"
+          className="p-2 bg-[#ccd6f6] placeholder-black"
           placeholder="Name"
           name="name"
           id=""
@@ -31,14 +31,14 @@ const Contact = () => {
           placeholder="Email"
           name="email"
           id=""
-          className="my-4 p-2 bg-[#ccd6f6] "
+          className="my-4 placeholder-black p-2 bg-[#ccd6f6] "
         />
         <textarea
           name="message"
           id=""
           cols="30"
           rows="10"
-          className="p-2 bg-[#ccd6f6]"
+          className="p-2 placeholder-black bg-[#ccd6f6]"
           placeholder="Message"
         ></textarea>
         <button

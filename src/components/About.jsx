@@ -19,14 +19,20 @@ const About = () => {
                 Hi, I'm Anush, nice to meet you, Please take a look around.
               </p>
             </div>
-            <div>
+            <div className="flex flex-col">
               <p className="text-[18px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-                autem cumque velit odio obcaecati similique expedita fugiat rem
-                minus magnam veritatis eligendi quae ratione iusto incidunt
-                eaque et, ea nesciunt dicta nisi tenetur provident fuga totam
-                vel! Eligendi, quaerat magnam.
+                I am a Full-Stack Developer profecient in NextJS, React and other JS tools. I have a keen interest in Embedded Programming,
+                I have also worked with other Programming Languages like C, C++.
               </p>
+                {/* <div className="name">
+                  B.Tech ( 2nd Year )
+                </div>
+                <div>
+                  Computer Engineering
+                </div>
+                <div>
+                  TIET, Patiala.
+                </div> */}
             </div>
           </div>
         </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import NODE from "../assets/node.png";
+import MyHerupa2 from "../assets/MyHerupa2.png"
+import Portfolio from "../assets/PortFolio.png"
 
 const Work = () => {
   return (
@@ -9,22 +11,51 @@ const Work = () => {
           <p className="text-4xl font-bold inline border-b-4 border-pink-600">
             Work
           </p>
-          <p className="py-4">// Check out some of my recent work</p>
+          <p className="py-4 text-xl">// Check out some of my recent work</p>
         </div>
 
         {/* Container for all of all of the projects */}
-        <div className="grid sm:grid-col-2 md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-col-2 md:grid-cols-2 gap-4">
           {/* Work 1 */}
           <div
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="shadow-lg  shadow-[#6fa3f6]  group container rounded-md flex justify-center items-center mx-auto content-div"
             style={{
-              backgroundImage: `url(${NODE})`,
+              backgroundImage: `url(${MyHerupa2})`,
             }}
           >
             {/* Hover effects */}
             <div className="opacity-0 group-hover:opacity-100 ">
               <span
-                className="text-3xl font-bold text-center text-white tracking-wider"
+                className="text-3xl p-4 font-bold text-center text-white tracking-wider"
+                style={{ display: "block" }}
+              >
+                React JS Application
+              </span>
+              <div className="pt-8 text-center ">
+                <a href="">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a href="">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Work 2 */}
+          <div
+            className="shadow-lg  shadow-[#6fa3f6] group container rounded-md flex justify-center items-center mx-auto content-div"
+            style={{
+              backgroundImage: `url(${Portfolio})`,
+            }}
+          >
+            {/* Hover effects */}
+            <div className="opacity-0 group-hover:opacity-100 ">
+              <span
+                className="text-3xl p-4 font-bold text-center text-white tracking-wider"
                 style={{ display: "block" }}
               >
                 React JS Application
