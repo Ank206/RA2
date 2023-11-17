@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaGit } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import logo from "../assets/AK(1).png";
+import logo from "../assets/AK.png";
 import style from "../main.module.css";
 import { Link } from "react-scroll";
 

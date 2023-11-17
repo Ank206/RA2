@@ -13,12 +13,8 @@ const Home = () => {
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
           I'm a Full Stack Developer
         </h2>
-        <p className="text-[#8892b0] py-4 max-w-[700px] text-xl ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vero
-          molestiae eligendi ducimus culpa architecto temporibus sunt officia
-          cupiditate quia quasi, fugit doloremque repudiandae repellat
-          voluptatum error eius maiores ipsa consectetur placeat cum! Hic, culpa
-          ullam nam architecto doloribus quisquam?
+        <p className="text-[#8892b0] py-4 max-w-[700px] text-2xl ">
+          And an Embedded Programming Enthusiast
         </p>
         <div>
           <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 duration-200">
