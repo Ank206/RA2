@@ -35,8 +35,8 @@ const last = {
 
 const base = {
   starAnimationDuration: 1500,
-  minimumDistanceBetweenStars: 20,
-  colors: ["249 146 253", "252 254 255"],
+  minimumDistanceBetweenStars: 30,
+  colors: ["249 146 253", "219, 39, 119", "252 254 255"],
   sizes: ["1.4rem", "1rem", "0.6rem"],
   animations: ["fall"],
 };
