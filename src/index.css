@@ -33,3 +33,21 @@
     hsla(242, 74%, 61%, 0.8)
   ) !important;
 }
+
+@keyframes fall {
+  0% {
+    transform: translate(0px, 0px) rotateX(-20deg) rotateY(10deg) scale(0.25);
+    opacity: 1;
+  }
+
+  15% {
+    transform: translate(-10px, -5px) rotateX(-20deg) rotateY(10deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-10px, 160px) rotateX(-90deg) rotateY(45deg)
+      scale(0.25);
+    opacity: 1;
+  }
+}

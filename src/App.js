@@ -5,6 +5,11 @@ import Home from "./components/Home.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Skills from "./components/Skills.jsx";
 import Work from "./components/Work.jsx";
+import { LazyResult } from "postcss";
+import { data } from "autoprefixer";
+
+import style from "./main.module.css";
+
 function App() {
   return (
     <div className="">
@@ -30,7 +35,7 @@ const last = {
 
 const base = {
   starAnimationDuration: 1500,
-  minimumDistanceBetweenStars: 10,
+  minimumDistanceBetweenStars: 20,
   colors: ["249 146 253", "252 254 255"],
   sizes: ["1.4rem", "1rem", "0.6rem"],
   animations: ["fall"],
@@ -66,7 +71,7 @@ const createStar = (position) => {
 
   star.className = "bi bi-star-fill";
 
-  star.style.opacity = 1;
+  star.style.opacity = 0;
   star.style.position = "absolute";
   star.style.left = px(position.x);
   star.style.top = px(position.y);
@@ -81,9 +86,42 @@ const createStar = (position) => {
   removeElement(star, 1500);
 };
 
+const UpdateLastStar = (position) => {
+  last.startingTime = new Date().getTime();
+
+  last.startingPosition = position;
+};
+
+const UpdateLastMousePosition = (position) => (last.mousePosition = position);
+
+const adjustLastMousePosition = (position) => {
+  if (last.mousePosition.x === 0 && last.mousePosition.y === 0) {
+    last.mousePosition = position;
+  }
+};
+
 document.addEventListener("mousemove", (e) => {
-  createStar(e);
-  console.log(e);
+  // createStar(e);
+  // console.log(e);
+
+  const mousePosition = { x: e.clientX, y: e.clientY };
+
+  adjustLastMousePosition(mousePosition);
+
+  const now = new Date().getTime(),
+    hasMovedFarEnough =
+      calcDistance(last.startingPosition, mousePosition) >=
+      base.minimumDistanceBetweenStars;
+
+  console.log(hasMovedFarEnough);
+
+  if (hasMovedFarEnough) {
+    createStar(mousePosition);
+
+    UpdateLastStar(mousePosition);
+  }
+
+  UpdateLastMousePosition(mousePosition);
 });
 
 export default App;
