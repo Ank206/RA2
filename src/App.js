@@ -12,7 +12,7 @@ import style from "./main.module.css";
 
 function App() {
   return (
-    <div className="">
+    <div id="save">
       <Navbar />
       <Home />
       <About />
@@ -72,7 +72,8 @@ const createStar = (position) => {
   star.className = "bi bi-star-fill";
 
   star.style.opacity = 0;
-  star.style.position = "absolute";
+  star.style.position = "fixed";
+  // star.style.zIndex = 1000;
   star.style.left = px(position.x);
   star.style.top = px(position.y);
   star.style.fontSize = selectRandom(base.sizes);
