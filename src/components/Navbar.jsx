@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaGit } from "react-icons/fa";
+import { SiCodeforces, SiCodechef} from "react-icons/si"
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import logo from "../assets/AK.png";
@@ -97,7 +98,7 @@ const Navbar = () => {
       </ul>
 
       {/* Social Icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-[28%] left-0">
         <ul>
           <li className="w-[165px] h-[60px] flex justify-between ml-[-100px] hover:ml-[00px] duration-300 bg-[#0a66c2]">
             <a
@@ -115,6 +116,7 @@ const Navbar = () => {
               Github <FaGithub size={"35px"} />
             </a>
           </li>
+          
           <li className="w-[165px] h-[60px] flex justify-between ml-[-100px] hover:ml-[00px] duration-300 bg-[#ea4335]">
             <a
               href="#"
@@ -129,6 +131,22 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-gray-300 text-[20px]"
             >
               Resume <BsFillPersonLinesFill size={"35px"} />
+            </a>
+          </li>
+          <li className="w-[188px] h-[60px] flex justify-between ml-[-123px] hover:ml-[00px] duration-300 bg-[#1f883d]">
+            <a
+              href="https://www.codechef.com/users/ank15"
+              className="flex justify-between items-center w-full text-gray-300 text-[20px]"
+            >
+              CodeChef <SiCodechef size={"35px"} />
+            </a>
+          </li>
+          <li className="w-[188px] h-[60px] flex justify-between ml-[-123px] hover:ml-[00px] duration-300 bg-[#ea4335]">
+            <a
+              href="https://codeforces.com/profile/Ank204"
+              className="flex justify-between items-center w-full text-gray-300 text-[20px]"
+            >
+              CodeForces <SiCodeforces size={"35px"} />
             </a>
           </li>
         </ul>

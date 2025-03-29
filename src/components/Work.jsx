@@ -1,7 +1,7 @@
 import React from "react";
 import NODE from "../assets/node.png";
 import MyHerupa2 from "../assets/MyHerupa2.png"
-import Portfolio from "../assets/PortFolio.png"
+import Portfolio from "../assets/KhushiyonKiKheti.jpeg"
 
 const Work = () => {
   return (
@@ -29,7 +29,7 @@ const Work = () => {
                 className="text-3xl p-4 font-bold text-center text-white tracking-wider"
                 style={{ display: "block" }}
               >
-                React JS Application
+                MyHerupa 2
               </span>
               <div className="pt-8 text-center ">
                 <a href="https://myherupa-2.vercel.app/">
@@ -58,15 +58,15 @@ const Work = () => {
                 className="text-3xl p-4 font-bold text-center text-white tracking-wider"
                 style={{ display: "block" }}
               >
-                React JS Application
+                Khushiyon Ki Kheti
               </span>
               <div className="pt-8 text-center ">
-                <a href="https://ankport.vercel.app/">
+                <a href="https://kissan-a96e9.web.app/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
                 </a>
-                <a href="">
+                <a href="https://github.com/aryan-panja/KhushiyonKiKheti">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>

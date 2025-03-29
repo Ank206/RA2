@@ -21,7 +21,7 @@ const About = () => {
             </div>
             <div className="flex flex-col">
               <p className="text-[18px]">
-                I am a Full-Stack Developer profecient in NextJS, React and other JS tools. I have a keen interest in Embedded Programming,
+                I am a Full-Stack Developer profecient in NextJS, React and other Web development tools. I have a keen interest in Competitive Programming.
                 I have also worked with other Programming Languages like C, C++.
               </p>
                 {/* <div className="name">
