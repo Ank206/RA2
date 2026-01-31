@@ -86,7 +86,14 @@ const Skills = () => {
             <p className="my-4">C++</p>
           </div>
         </div>
+        <div className="pb-1">
+          
+          <p className="text-gray-300 py-4 text-xl">
+            // Feel free to drop me an email or connect with me on LinkedIn.
+          </p>
+        </div>
       </div>
+      
     </div>
   );
 };

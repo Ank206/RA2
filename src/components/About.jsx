@@ -20,9 +20,7 @@ const About = () => {
               </p>
             </div>
             <div className="flex flex-col">
-              <p className="text-[18px]">
-                I am a Full-Stack Developer profecient in NextJS, React and other Web development tools. I have a keen interest in Competitive Programming.
-                I have also worked with other Programming Languages like C, C++.
+              <p className="text-[18px]">A Full Stack Developer proficient in the MERN Stack and Next.js, complemented by strong skills in C++ and DSA. I am passionate about crafting beautiful websites and have a knack for understanding technology at a deeper level.
               </p>
                 {/* <div className="name">
                   B.Tech ( 2nd Year )

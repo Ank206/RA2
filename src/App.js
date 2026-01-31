@@ -16,9 +16,9 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Skills />
       <Work />
-      <Contact />
+      <Skills />
+      {/* <Contact /> */}
     </div>
   );
 }
@@ -62,7 +62,7 @@ const appendElement = (element) =>
   removeElement = (element, delay) =>
     setTimeout(
       () => document.getElementById("root").removeChild(element),
-      delay
+      delay,
     );
 
 const createStar = (position) => {

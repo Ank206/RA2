@@ -51,11 +51,7 @@ const Navbar = () => {
               Work
             </Link>
           </li>
-          <li>
-            <Link to="contact" smooth={true} duration={500}>
-              Contact
-            </Link>
-          </li>
+     
         </ul>
       </div>
 
@@ -90,11 +86,7 @@ const Navbar = () => {
             Work
           </Link>
         </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
+       
       </ul>
 
       {/* Social Icons */}
